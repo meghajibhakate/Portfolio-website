@@ -1,362 +1,286 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Megha Jibhakate/UI UX</title>   
-        <link rel="shortcut icon" type="image/jpg" href="./assets/favicon.svg"/>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:wght@700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet">
-        <script src="https://smtpjs.com/v3/smtp.js">
-        </script>
-    </head>
-    <body style="overflow-x: hidden;">
-        <div id="sidebar" class="collapsed ">
-            <button class="btfun" id="closer" title="Close sidebar">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4 18H20M4 6H20H4ZM4 12H12H4Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>          
-            </button>
-            <div class="flex-col-n subhead" id="sidebarlinks">
-                <button class="navlink mt btfun" style="color: #0050ff;"><a class="subhead" href='#landingpage'>ABOUT ME</a></button>
-                <button class="navlink mt btfun"><a class="subhead" href='#resume' >RESUME</a></button>
-                <button class="navlink mt btfun"><a class="subhead" href='#project' >PROJECTS</a></button>
-                <button class="navlink mt btfun"><a class="subhead" href='#contact'>CONTACT</a></button>
-            </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Megha Jibhakate/UI UX</title>
+    <link rel="shortcut icon" type="image/jpg" href="./assets/favicon.svg" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet">
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+</head>
+
+<body style="overflow-x: hidden;">
+    <div id="sidebar" class="collapsed ">
+        <button class="btfun" id="closer" title="Close sidebar">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 18H20M4 6H20H4ZM4 12H12H4Z" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div class="flex-col-n subhead" id="sidebarlinks">
+            <button class="navlink mt btfun" style="color: #0050ff;"><a class="subhead" href='#landingpage'>ABOUT
+                    ME</a></button>
+            <button class="navlink mt btfun"><a class="subhead" href='#resume'>RESUME</a></button>
+            <button class="navlink mt btfun"><a class="subhead" href='#project'>PROJECTS</a></button>
+            <button class="navlink mt btfun"><a class="subhead" href='#contact'>CONTACT</a></button>
         </div>
-        <div class="flex-row nav">
-            <!--
+    </div>
+    <div class="flex-row nav">
+        <!--
             <div class="flex-row myname" style="margin-left: 28px;"><span id="rect"></span><span class="name">Abhishek Gautam</span><span class="subhead">/ UI UX </span></div>
             -->
-            <!-- <P>Megha Jibhakate</P> -->
-            <!-- <img onclick="window.open('https://officialabhishekgautam.github.io/Portfolio-Website/','_self')"  id="logo" src="./assets/logo.svg"> -->
-            <div class="flex-row">
+        <!-- <P>Megha Jibhakate</P> -->
+        <!-- <img onclick="window.open('https://officialabhishekgautam.github.io/Portfolio-Website/','_self')"  id="logo" src="./assets/logo.svg"> -->
+        <div class="flex-row">
             <div class="flex-row navdiv">
                 <ul class="flex-row-n subhead navbar">
                     <li class="navlink" style="color: #0050ff;"><a href="#landingpage">ABOUT ME</a></li>
                     <li class="navlink"><a href="#resume">RESUME</a></li>
                     <li class="navlink"><a href="#project">PROJECTS</a></li>
                     <li class="navlink"><a href="#contact">CONTACT</a></li>
-                </ul> 
+                </ul>
             </div>
-            <button title="Toggle sidebar" id="closebt" class="btfun " >
+            <button title="Toggle sidebar" id="closebt" class="btfun ">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
                 </svg>
             </button>
-            </div>
         </div>
-        
-        <div class="flex-row-n" id="landingpage" style="width: 100vw;">
-            <div class="flex-row-n bgimg"  id="landingpage1">
-                <div class="flex-col-n bg3" id="card" >
-                    <div class="image-cropper" ><img src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg" class="dp"></div>
-                    <div class="name " style="font-size: x-large; margin-top: 22px;">Megha</div>
-                    <div class="name " style="font-size: x-large;">Jibhakate</div>
-                    <div class="line " style=" margin-top: 18px;"></div>
-                    <span class="subhead " style=" margin-top: 22px;">Front-End Developer</span>
-                    <span class="subhead " style=" margin-top: 14px;">ASPIRING DEVELOPER</span>
-                    <div class="flex-row " id="card-bottom">
-                        <!-- <div onclick="window.open('https://www.facebook.com/officialabhishekgautam','_blank')" class="px"><img src="./social/fb.svg"></div> -->
-                        <div onclick="window.open('https://www.linkedin.com/in/megha-jibhakate/','_blank')" class="px"><img src="./social/linkedin.svg"></div>
-                        <!-- <div onclick="window.open('https://www.instagram.com/official_abhishek_g/','_blank')" class="px"><img src="./social/insta.svg"></div> -->
-                        <!-- <div onclick="window.open('https://www.behance.net/udibabaabhishek','_blank')" class="px"><img src="./social/behance.svg"></div> -->
-                        <!-- <div onclick="window.open('https://dribbble.com/udi_baba_abhishek','_blank')" class="px"><img src="./social/dribble.svg"></div> -->
-                        <div onclick="window.open('https://github.com/meghajibhakate','_blank')" class="px"><img src="./social/github.svg"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex-row" id="landingpage2">
-                <div class="flex-col-n lp-para-main">
-                    <div class="lp-para subhead lp2fix" style="margin-top: 64px; ">I am from Bhandara, Maharashtra and my village name is Lobhi. I have complete Frontend development course from Sajhe Sapne in Himachal Pradesh.</div>
-                    <div class="lp-para subhead" style="margin-top: 22px;">Recently I am working as a fellow in Tech4Good Labs company which is based in Kerala Kochi.</div>
-                    <div class="line la-para" id="linefix" style=" margin-top: 34px;"></div>
-                    <!-- <div class="lp-para subhead" style="margin-top: 22px;"><strong>B.TECH IT</strong> 2018-22</div> -->
-                    <!-- <div class="lp-para subhead" style="margin-top: 12px;">Guru Tegh Bahadur Institute of Technology, New Delhi</div> -->
-                    <div class="flex-row lp-para subhead" style="margin-top: 32px; font-size:small; ">   
-                        <div onclick="window.location.href='#resume'" class="button1" id="resume">RESUME</div>
-                        <div onclick="window.location.href='https://github.com/meghajibhakate'"  class="button2" style="margin-left: 12px;" >PROJECTS</div>                       
-                    </div>
+    </div>
+
+    <div class="flex-row-n" id="landingpage" style="width: 100vw;">
+        <div class="flex-row-n bgimg" id="landingpage1">
+            <div class="flex-col-n bg3" id="card">
+                <div class="image-cropper"><img
+                        src="data:image/jpeg;base64,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"
+                        class="dp"></div>
+                <div class="name " style="font-size: x-large; margin-top: 22px;">Megha</div>
+                <div class="name " style="font-size: x-large;">Jibhakate</div>
+                <div class="line " style=" margin-top: 18px;"></div>
+                <span class="subhead " style=" margin-top: 22px;">Front-End Developer</span>
+                <span class="subhead " style=" margin-top: 14px;">ASPIRING DEVELOPER</span>
+                <div class="flex-row " id="card-bottom">
+                    <div onclick="window.open('https://www.linkedin.com/in/megha-jibhakate/','_blank')" class="px"><img
+                            src="./social/linkedin.svg"></div>
+                    <div onclick="window.open('https://github.com/meghajibhakate','_blank')" class="px"><img
+                            src="./social/github.svg"></div>
                 </div>
             </div>
         </div>
-        
-        <!-- <div class="flex-col bg3 insetshadow" style="width: 100vw;">
-            <div class="name" style="font-size: x-large; margin-top: 48px;">RESUME</div>
-            <div class="line" style=" margin-top: 18px;"></div>
-            <div class="subhead " style="margin: 18px 0px 0px 0px; font-size: large;">I HAVE <strong>TWO MODES</strong></div>
-            <div class="flex-row modes"  style=" margin-top: 48px; margin-bottom: 52px;">
-                <div class="flex-col cardeffect"  onclick="window.open('./resume/designer.pdf','_blank')" >
-                    <div class="face1"><img src="cards/designer.png" height="150px" width="200px"></div>
-                    <div class="face2" >
-                        <div class="subhead" style="margin-top: 22px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;"><strong>DESIGNER</strong> CV</div>
+        <div class="flex-row" id="landingpage2">
+            <div class="flex-col-n lp-para-main">
+                <div class="lp-para subhead lp2fix" style="margin-top: 64px; ">I am from Bhandara, Maharashtra and my
+                    village name is Lobhi. I have complete Frontend development course from Sajhe Sapne in Himachal
+                    Pradesh.</div>
+                <div class="lp-para subhead" style="margin-top: 22px;">Recently I am working as a fellow in Tech4Good
+                    Labs company which is based in Kerala Kochi.</div>
+                <div class="line la-para" id="linefix" style=" margin-top: 34px;"></div>
+                <div class="flex-row lp-para subhead" style="margin-top: 32px; font-size:small; ">
+                    <div onclick="window.open('./resume/Megha_Resume.pdf','_blank')" class="button1" id="resume">RESUME
                     </div>
-                </div>
-                <div class="flex-col cardeffect"  onclick="window.open('./resume/dev.pdf','_blank')" >
-                    <div class="face1"><img src="cards/coder.png" height="150px" width="200px"></div>
-                    <div class="face2" id="project">
-                        <div class="subhead" style="margin-top: 22px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;"><strong>DEVELOPER</strong> CV</div>
-                    </div>
-                </div>   
-            </div>
-            
-           
-            <div class="flex-row" style="justify-items: center; align-items: center; margin-top: 48px;">
-                <div class="subhead over" style="margin-top: 18px;">REQUEST FOR THE</div>
-                <img src="social/care.svg" style="padding-left: 8px; margin-top: 18px;" height="24px" width="24px" alt="">
-                <div class="subhead over" style="margin-top: 18px;">CODE</div>
-            </div>
-            <input class="input bg3" type="email" placeholder="TYPE YOUR EMAIL">     
-            <div class="subhead" style="margin-top: 24px; margin-bottom: 38px; font-size:small;">
-                <div onclick="" class="button1" >REQUEST</div>
-            </div>
-            -->
-        </div>
-        
-        <div class="flex-col" id="projects" style="align-items: center;">
-            <div class="name over" style="font-size: x-large; margin-top: 48px; ">PROJECTS</div>
-            <div class="line over" style=" margin-top: 18px;"></div>
-            <!-- <div class="subhead" style="margin-top: 18px;">I NEVER DREAMED</div>
-            <div class="flex-row modes" style="justify-items: center; align-items: center;">
-                <div class="subhead over" style="margin-top: 8px;">I WOULD BE A SUPER COOL</div> -->
-                <img src="social/wow.svg" style="padding-left: 8px; margin-top: 8px;" height="24px" width="24px" alt="">
-                <div class="subhead over" style="padding-left: 8px; margin-top: 8px;"><strong>UI UX DESIGNER</strong></div>
-            </div>
-            <div class="flex-row" style="margin: 48px 0px 48px 0px">
-                <div class="name over hd2" style="font-size: large; text-align: center;">UI UX</div>
-            </div>
-            <div class="flex-row cardrow" >
-                
-                <div class="flex-col cardeffect firstcard"  onclick="window.open('https://meghajibhakate.github.io/Word-Dicitonary/','_blank')" >
-                    <div class="face3"><img src="cards/mymandi.png" height="150px" width="200px"></div>
-                    <div class="face4">
-                        <div class="subhead p-8" style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;"><strong>WORD-DICTONARY</strong></div>
-                        <div class="subhead " style=" font-size: small; text-align: center; "> Technologies used - HTML, CSS, JavaScript</div>
-                        <div class="flex-row" style="justify-content: center;">
-                            <div class="subhead adobexd">XD</div>
-                        </div>
-                        <div class="subhead" style=" padding : 12px 16px 24px 16px ;font-size: small; text-align: center; color: rgb(139, 139, 139); ">It is a dictionary where users can search a word's meaning and listen to it pronunciation</div>
-                    </div>
-                </div>
-
-                <!-- <div class="flex-col cardeffect"  onclick="window.open('https://meghajibhakate.github.io/Word-Dicitonary/','_blank')" >
-                    <div class="face3"><img src="cards/safechain.png" height="150px" width="200px"></div>
-                    <div class="face4">
-                        <div class="subhead p-8" style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;"><strong>SAFECHAIN</strong></div>
-                        <div class="subhead " style=" font-size: small; text-align: center; padding-left: 0px;"> UI UX | ILLUSTRATION</div>
-                        <div class="flex-row" style="justify-content: center;">
-                            <div class="subhead adobexd">XD</div>
-                            <div class="subhead ai">AI</div>
-                        </div>
-                        <div class="subhead" style=" padding : 12px 16px 24px 16px ;font-size: small; text-align: center; color: rgb(139, 139, 139); ">A non-custodial crypto wallet to store private keys and other sensitive information across blockchains.</div>
-                    </div>
-                </div>  -->
-
-                <!-- <div class="flex-col cardeffect"  onclick="window.open('https://www.behance.net/gallery/118163995/Covid-19-Essentials-App-UI-UX-Design-Interaction-D','_blank')" >
-                    <div class="face3"><img src="cards/covid.png" height="150px" width="200px"></div>
-                    <div class="face4">
-                        <div class="subhead p-8" style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;"><strong>COVID ESSENTIALS</strong></div>
-                        <div class="subhead " style=" font-size: small; text-align: center;  padding-left: 0px;">APP UI | INTERACTION</div>
-                        <div class="flex-row" style="justify-content: center;">
-                            <div class="subhead adobexd">XD</div>
-                        </div>
-                        <div class="subhead" style=" padding : 12px 16px 24px 16px ;font-size: small; text-align: center; color: rgb(139, 139, 139); ">An all in one app for all covid essentials at one place. Mockup is also made in Adobe XD.</div>
-                    </div>
-                </div> -->
-
-                <!-- <div class="flex-col cardeffect"  onclick="window.open('https://www.behance.net/gallery/123474365/Solshiba-Website-Design-UI-UX-Doge-Coin','_blank')" >
-                    <div class="face3"><img src="cards/solshiba.png" height="150px" width="200px"></div>
-                    <div class="face4">
-                        <div class="subhead p-8" style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;"><strong>SOLSHIBA</strong></div>
-                        <div class="subhead " style=" font-size: small; text-align: center; padding-left: 0px;"> UI UX | ILLUSTRATION</div>
-                        <div class="flex-row" style="justify-content: center;">
-                            <div class="subhead adobexd">XD</div>
-                            <div class="subhead ai">AI</div>
-                        </div>
-                        <div class="subhead" style=" padding : 12px 16px 24px 16px ;font-size: small; text-align: center; color: rgb(139, 139, 139); ">Dog themed crypto token website similar to the famous doge coin.</div>
-                    </div>
-                </div> -->
-<!--                 
-                <div class="flex-col cardeffect lastcard"  onclick="window.open('https://www.behance.net/udibabaabhishek','_blank')" >
-                    <div class="face3"><img src="cards/be.gif" height="150px" width="200px"></div>
-                    <div class="face4">
-                        <div class="subhead p-8" style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;"><strong>PORTFOLIO</strong></div>
-                        <div class="subhead " style=" font-size: small; text-align: center; padding-left: 0px;">COMPLETE</div>
-                        <div class="flex-row" style="justify-content: center;">
-                            <div class="subhead be">Be</div>
-                        </div>
-                        <div class="subhead" style=" padding : 12px 16px 24px 16px ;font-size: small; text-align: center; color: rgb(139, 139, 139); ">Check out my complete portfolio on Behance focused on visuals & branding.</div>
-                    </div>
-                </div> -->
-            </div>
-
-            <div class="flex-row" style="margin: 48px 110px 48px 110px">
-                <div class="name over hd2" style="font-size: large;">Development</div>
-            </div>
-            <div class="flex-row cardrow dev">
-                
-                    <div class="flex-col cardeffect firstcard"  onclick="window.open('https://officialabhishekgautam.github.io/Coaching-Professional-website-using-Tailwind-CSS/','_blank')" >
-                        <div class="face3"><img src="cards/coaching.png" height="150px" width="200px"></div>
-                        <div class="face4">
-                            <div class="subhead p-8" style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px; line-height: 20px;"><strong>COACHING</strong></div>
-                            <div class="subhead " style=" font-size: small; text-align: center; padding-left: 0px;">PROFESSIONAL WEBSITE</div>
-                            <div class="flex-row" style="justify-content: center;">
-                                <div class="subhead tcss"></div>
-                                <div class="subhead alpine"></div>
-                            </div>
-                            <div class="subhead" style=" padding : 12px 16px 24px 16px ;font-size: small; text-align: center; color: rgb(139, 139, 139); ">Fully responsive website made using frontend framework "Tailwind CSS" & Alpine JS.</div>
-                        </div>
-                    </div>
-                
-                
-                    <div class="flex-col cardeffect lastcard"  onclick="window.open('https://github.com/officialabhishekgautam','_blank')" >
-                        <div class="face3"><img src="cards/github.gif" height="150px" width="200px"></div>
-                        <div class="face4">
-                            <div class="subhead p-8" style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px; line-height: 20px;"><strong>GITHUB</strong></div>
-                            <div class="subhead " style=" font-size: small; text-align: center; padding-left: 0px;">COMPLETE</div>
-                            <div class="flex-row" style="justify-content: center;">
-                                <div class="subhead github"></div>
-                            </div>
-                            <div class="subhead" style=" padding : 12px 16px 24px 16px ;font-size: small; text-align: center; color: rgb(139, 139, 139); ">Check out my Github profile. Not a pro but still I'm something :)</div>
-                        </div>
-                    </div>
-                
-            </div>
-
-            <div class="flex-row" style="margin: 48px 110px 48px 110px; width: 160px;">
-                <div class="name over hd2" style="font-size: large;">Graphic Design</div>
-            </div>
-            <div class="flex-row cardrow">
-                
-                <div class="flex-col cardeffect firstcard"  onclick="window.open('https://www.behance.net/gallery/122600827/Social-Media-Banner-SOLSWAP-Crypto-Branding','_blank')" >
-                    <div class="face3"><img src="cards/solswap.jpg" height="150px" width="200px"></div>
-                    <div class="face4">
-                        <div class="subhead p-8" style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;"><strong>SOLSWAP BANNER</strong></div>
-                        <div class="subhead " style=" font-size: small; text-align: center; padding-left: 0px;">SOCIAL MEDIA | BRANDING</div>
-                        <div class="flex-row" style="justify-content: center;">
-                            <div class="subhead figma"></div>
-                        </div>
-                        <div class="subhead" style=" padding : 12px 16px 24px 16px ;font-size: small; text-align: center; color: rgb(139, 139, 139); ">Solswap is a swapping AMM built on SOLANA, made social media assets for them during my internship.</div>
-                    </div>
-                </div>
-
-                <div class="flex-col cardeffect"   onclick="window.open('https://www.behance.net/gallery/123633861/Proteck-Paints-Product-Packaging-Design','_blank')" >
-                    <div class="face3"><img src="cards/paints.png" height="150px" width="200px"></div>
-                    <div class="face4">
-                        <div class="subhead p-8" style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;"><strong>PROTECK PAINTS</strong></div>
-                        <div class="subhead " style=" font-size: small; text-align: center; padding-left: 0px;">PACKAGING DESIGN</div>
-                        <div class="flex-row" style="justify-content: center;">
-                            <div class="subhead ai">AI</div>
-                        </div>
-                        <div class="subhead" style=" padding : 12px 16px 24px 16px ;font-size: small; text-align: center; color: rgb(139, 139, 139); ">Proteck paints is small scale paint company like asian paints. This was a freelancing project.</div>
-                    </div>
-                </div> 
-
-                <div class="flex-col cardeffect"  onclick="window.open('https://www.behance.net/gallery/123529373/SafeChain-Crypto-Vault-Logo-Design','_blank')" >
-                    <div class="face3"><img src="cards/logo.png" height="150px" width="200px"></div>
-                    <div class="face4">
-                        <div class="subhead p-8" style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;"><strong>SAFECHAIN LOGO</strong></div>
-                        <div class="subhead " style=" font-size: small; text-align: center;  padding-left: 0px;">LOGO DESIGNING</div>
-                        <div class="flex-row" style="justify-content: center;">
-                            <div class="subhead adobexd">XD</div>
-                            <div class="subhead ai">XD</div>
-                        </div>
-                        <div class="subhead" style=" padding : 12px 16px 24px 16px ;font-size: small; text-align: center; color: rgb(139, 139, 139); ">Worked on safechain during my internship, made branding & social media assets for them.</div>
-                    </div>
-                </div>
-
-                <div class="flex-col cardeffect" onclick="window.open('https://www.behance.net/gallery/119281559/3D-Avatar-Illustration-Design-Brand-Identity','_blank')" >
-                    <div class="face3"><img src="cards/illustration.jpg" height="150px" width="200px"></div>
-                    <div class="face4">
-                        <div class="subhead p-8" style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;"><strong>3D AVATAR</strong></div>
-                        <div class="subhead " style=" font-size: small; text-align: center; padding-left: 0px;"> ILLUSTRATION DESIGN</div>
-                        <div class="flex-row" style="justify-content: center;">
-                            <div class="subhead adobexd">XD</div>
-                            <div class="subhead ai">AI</div>
-                        </div>
-                        <div class="subhead" style=" padding : 12px 16px 24px 16px ;font-size: small; text-align: center; color: rgb(139, 139, 139); ">Made 3d Avatar design of mine using Adobe illustrator. I belive that tools don't matter.</div>
-                    </div>
-                </div>
-                
-                <div class="flex-col cardeffect lastcard"  onclick="window.open('https://www.behance.net/udibabaabhishek','_blank')" >
-                    <div class="face3"><img src="cards/be.gif" height="150px" width="200px"></div>
-                    <div class="face4">
-                        <div class="subhead p-8" style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;"><strong>PORTFOLIO</strong></div>
-                        <div class="subhead " style=" font-size: small; text-align: center; padding-left: 0px;">COMPLETE</div>
-                        <div class="flex-row" style="justify-content: center;">
-                            <div class="subhead be">Be</div>
-                        </div>
-                        <div class="subhead" style=" padding : 12px 16px 24px 16px ;font-size: small; text-align: center; color: rgb(139, 139, 139); ">Check out my complete portfolio on Behance focused on visuals & branding.</div>
-                    </div>
+                    <div onclick="window.open('https://github.com/meghajibhakate','_blank')" class="button2"
+                        style="margin-left: 12px;">PROJECTS</div>
                 </div>
             </div>
         </div>
-        
-        <div class="flex-col bg3 insetshadow" style="width: 100vw;">
-            <div class="name gffix"  style="font-size: x-large; margin-top: 48px;">TOOLS & LANGUAGES I USE</div>
-            <div class="line" style=" margin-top: 18px;"></div>
-            <div class="subhead gffix" style="margin: 18px 6px 0px 6px; font-size: large;">NEXUS EVENT WHERE TECHNOLOGY MEETS <strong>CREATIVITY</strong></div>
-            <div class="flex-row" id="skillmainrow">
-                <div class="flex-row"  id="skillrow1">
-                    <div class="skillbox"><img src="skills/ai.png" height="48px" width="48px"></div>
-                    <div class="skillbox"><img src="skills/xd.png" height="48px" width="48px"></div>
-                    <div class="skillbox"><img src="skills/figma.png" height="48px" width="48px"></div>
-                    <div class="skillbox"><img src="skills/pr.png" height="48px" width="48px"></div>
-                    <div class="skillbox"><img src="skills/bs.png" height="48px" width="48px"></div>              
-               </div>
-               <div class="flex-row" id="skillrow2">
-                   
-                   <div class="skillbox"><img src="skills/tailwind.png" height="48px" width="48px"></div>
-                   <div class="skillbox"><img src="skills/node.png" height="48px" width="48px"></div>
-                   <div class="skillbox"><img src="skills/py.jpg" height="48px" width="48px"></div>
-              </div>
+    </div>
+
+
+    </div>
+
+    <div class="flex-col" id="projects" style="align-items: center;">
+        <div class="name over" style="font-size: x-large; margin-top: 48px; ">PROJECTS</div>
+        <div class="line over" style=" margin-top: 18px;"></div>
+        <div class="subhead over" style="margin-top: 8px;">This is My Project Please Check it</div>
+        <img src="social/wow.svg" style="padding-left: 8px; margin-top: 8px;" height="24px" width="24px" alt="">
+
+    </div>
+    <div class="flex-row" style="margin: 48px 0px 48px 0px">
+        <div class="name over hd2" style="font-size: large; text-align: center;">FRONT-END DEVLOPER</div>
+    </div>
+    <div class="flex-row cardrow">
+
+        <div class="flex-col cardeffect firstcard"
+            onclick="window.open('https://meghajibhakate.github.io/Word-Dicitonary/','_blank')">
+            <div class="face3"><img
+                    src="https://thumbs.dreamstime.com/b/dictionary-closed-red-english-tabs-isolated-white-background-81050593.jpg"
+                    height="150px" width="200px"></div>
+            <div class="face4">
+                <div class="subhead p-8"
+                    style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;">
+                    <strong>WORD-DICTONARY</strong></div>
+                <div class="subhead " style=" font-size: small; text-align: center; "> Technologies used - HTML, CSS,
+                    JavaScript</div>
+                <div class="flex-row" style="justify-content: center;">
+                    <div class="subhead adobexd">HTML</div>
+                    <div class="subhead adobexd">CSS</div>
+
+                    <div class="subhead adobexd">JS</div>
+
+                </div>
+                <div class="subhead"
+                    style=" padding : 12px 16px 24px 16px ;font-size: small; text-align: center; color: rgb(12 10 10); ">
+                    It is a dictionary where users can search a word's meaning and listen to it pronunciation</div>
             </div>
         </div>
-        
-        <div class="flex-col" style="align-items: center;" id="contact">
-            <div class="name over" style="font-size: x-large; margin-top: 48px;">CONTACT ME</div>
-            <div class="line over" style=" margin-top: 18px;"></div>
-            <div class="subhead" style="margin-top: 18px;">WRITE AN <strong>E-MAIL</strong></div>
-            <div class="subhead" style="margin-top: 18px; font-size: medium; color: #0050ff; margin-left: 6px; margin-right: 6px;"><strong>meghajibhakate18@gmail.com</strong></div>
-            <div class="flex-col" style="align-items: center; margin-top: 22px;">
-                <div class="flex-row-n" id="contactform">
-                    <div class="flex-row-n contactimg"><img src="./assets/hi.gif" height="150px"></div>
-                    <form class="flex-col-n bg3 formbox" id="my_form" action="https://formsubmit.co/meghajibhakate18@gmail.com" method="POST">
-                        <input class="input form bg3" type="text" name="name"  placeholder="NAME *" required>
-                        <input class="input form bg3" type="email" name="email"  placeholder="EMAIL *" required>
-                        <input type="hidden" name="_next" value="https://officialabhishekgautam.github.io/Portfolio-Website/thanks.html">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="text" name="_honey" style="display:none">
-                        <input type="hidden" name="_subject" value="Msg from portfolio!">
-                        <input class="input form bg3" type="text" name="message"  placeholder="YOUR MESSAGE">
-                        <button class="subhead send bg3"  type="submit" >
-                            <div class="button1">SEND</div>
-                        </button>
-                    </form>
+
+        <div class="flex-col cardeffect"
+            onclick="window.open('https://meghajibhakate.github.io/FOSS-United-Foundation/','_blank')">
+            <div class="face3"><img src="https://fossunited.org/files/logo618eee.svg" height="150px" width="200px"
+                    style="    background: rgb(26, 30, 29);"></div>
+            <div class="face4">
+                <div class="subhead p-8"
+                    style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;">
+                    <strong>Foss United Website</strong></div>
+                <div class="subhead " style=" font-size: small; text-align: center; padding-left: 0px;"> Technologies
+                    used - HTML, CSS, JavaScript</div>
+                <div class="flex-row" style="justify-content: center;">
+                    <div class="subhead adobexd">HTML</div>
+                    <div class="subhead adobexd">CSS</div>
+
+                    <div class="subhead adobexd">JS</div>
                 </div>
-                <div class="subhead">
-                    <p><strong>FOLLOW</strong> ME</p>
-                </div>
-                
-                <div class="flex-row ">
-                    <!-- <div  onclick="window.open('https://www.facebook.com/officialabhishekgautam','_blank')"  class="px"><img src="./social/fb.svg"></div> -->
-                    <div  onclick="window.open('https://www.linkedin.com/in/megha-jibhakate/','_blank')"  class="px"><img src="./social/linkedin.svg"></div>
-                    <!-- <div  onclick="window.open('https://www.instagram.com/official_abhishek_g/','_blank')"  class="px"><img src="./social/insta.svg"></div> -->
-                    <!-- <div  onclick="window.open('https://www.behance.net/udibabaabhishek','_blank')"  class="px"><img src="./social/behance.svg"></div> -->
-                    <div  onclick="window.open('https://github.com/meghajibhakate','_blank')"  class="px"><img src="./social/github.svg"></div>
-                </div>
-                <div class="subhead bottom">
-                    <p>© 2023 by Megha Jibhakate.</p>
-                    <!-- <p style="padding-top: 4px;"><a id="license" href="./license.txt">All rights reserved</a></p> -->
-                    <p style="padding-top: 4px;">Proudly created with <strong>HTML CSS JS</strong></p>
-                </div>   
+                <div class="subhead"
+                    style=" padding : 12px 16px 24px 16px ;font-size: small; text-align: center; color: rgb(12 10 10); ">
+                    It's a simple website.</div>
             </div>
         </div>
-        <script src="./script.js" async defer></script>
-    </body>
+
+        <div class="flex-col cardeffect"
+            onclick="window.open('https://meghajibhakate.github.io/New-to-do-aap-project-Aircampus-/','_blank')">
+            <div class="face3"><img
+                    src="https://1.bp.blogspot.com/-i78iKr_P9Pk/X9ohjXyc5eI/AAAAAAAAA_4/8UauxZaOgUshGK7MXwW1gZqts7Zrf_AewCLcBGAsYHQ/s1280/Todo%2BList%2BApp%2Busing%2BHTML%2BCSS%2B%2526%2BJavaScript.webp"
+                    height="150px" width="200px"></div>
+            <div class="face4">
+                <div class="subhead p-8"
+                    style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;">
+                    <strong>To Do App</strong></div>
+                <div class="subhead " style=" font-size: small; text-align: center;  padding-left: 0px;">Technologies
+                    used - HTML, CSS, JavaScript</div>
+                <div class="flex-row" style="justify-content: center;">
+                    <div class="subhead adobexd">HTML</div>
+                    <div class="subhead adobexd">CSS</div>
+
+                    <div class="subhead adobexd">JS</div>
+                </div>
+                <div class="subhead"
+                    style=" padding : 12px 16px 24px 16px ;font-size: small; text-align: center; color: rgb(139, 139, 139); ">
+                    It is a responsive app where users can add their tasks and mark them to be completed.</div>
+            </div>
+        </div>
+
+        <div class="flex-col cardeffect"
+            onclick="window.open('https://meghajibhakate.github.io/ourgroundworks-T4G/','_blank')">
+            <div class="face3"><img
+                    src="http://nebula.wsimg.com/8dc8a5d30a799bfc48ef72156a6ecc29?AccessKeyId=5EB8FDB0F5F99DADFB5F&disposition=0&alloworigin=1"
+                    height="150px" width="200px" style="    background: rgb(232, 119, 74);"></div>
+            <div class="face4">
+                <div class="subhead p-8"
+                    style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;">
+                    <strong>Website</strong></div>
+                <div class="subhead " style=" font-size: small; text-align: center; padding-left: 0px;">Technologies
+                    used - HTML, CSS, JavaScript</div>
+                <div class="flex-row" style="justify-content: center;">
+                    <div class="subhead adobexd">HTML</div>
+                    <div class="subhead adobexd">CSS</div>
+                    <div class="subhead adobexd">JS</div>
+                </div>
+                <div class="subhead"
+                    style=" padding : 12px 16px 24px 16px ;font-size: small; text-align: center; color: rgb(139, 139, 139); ">
+                    It's a simple and responsive website .</div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="flex-col bg3 insetshadow" style="width: 100vw;">
+        <div class="name gffix" style="font-size: x-large; margin-top: 48px;">TOOLS & LANGUAGES I USE</div>
+        <div class="line" style=" margin-top: 18px;"></div>
+        <div class="subhead gffix" style="margin: 18px 6px 0px 6px; font-size: large;"> <strong>CREATIVITY</strong>
+        </div>
+        <div class="flex-row" id="skillmainrow">
+            <div class="flex-row" id="skillrow1">
+                <div class="skillbox"><img
+                        src="https://play-lh.googleusercontent.com/85WnuKkqDY4gf6tndeL4_Ng5vgRk7PTfmpI4vHMIosyq6XQ7ZGDXNtYG2s0b09kJMw"
+                        height="50px" width="55px"></div>
+                <div class="skillbox"><img
+                        src="https://play-lh.googleusercontent.com/TxjQBGYHvMJsBX5dCvxQ4R-_4N-XrVhW6-p7D7TXanXKZMD8L-UkeMBWO1dtubGVNqU"
+                        height="50px" width="55px"></div>
+                <div class="skillbox"><img
+                        src="https://img.freepik.com/premium-vector/swoosh-letter-js-logo-design-business-company-identity-water-wave-js-logo_754537-502.jpg?w=2000"
+                        height="50px" width="55px"></div>
+                <div class="skillbox"><img
+                        src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/fGWjtyQtG4JE7UXgaPAN"
+                        height="50px" width="55px"></div>
+                <div class="skillbox"><img
+                        src="https://user-images.githubusercontent.com/806104/86617231-8ff0e300-bf7c-11ea-89ef-10866483c511.png"
+                        height="50px" width="55px"></div>
+
+            </div>
+            <div class="flex-row" id="skillrow2">
+                <div class="skillbox"><img src="skills/py.jpg" height="48px" width="48px"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-col" style="align-items: center;" id="contact">
+        <div class="name over" style="font-size: x-large; margin-top: 48px;">CONTACT ME</div>
+        <div class="line over" style=" margin-top: 18px;"></div>
+        <div class="subhead" style="margin-top: 18px;">WRITE AN <strong>E-MAIL</strong></div>
+        <div class="subhead"
+            style="margin-top: 18px; font-size: medium; color: #0050ff; margin-left: 6px; margin-right: 6px;">
+            <strong>meghajibhakate18@gmail.com</strong></div>
+        <div class="flex-col" style="align-items: center; margin-top: 22px;">
+            <div class="flex-row-n" id="contactform">
+                <div class="flex-row-n contactimg"><img src="./assets/hi.gif" height="150px"></div>
+                <form class="flex-col-n bg3 formbox" id="my_form"
+                    action="https://formsubmit.co/meghajibhakate18@gmail.com" method="POST">
+                    <input class="input form bg3" type="text" name="name" placeholder="NAME *" required>
+                    <input class="input form bg3" type="email" name="email" placeholder="EMAIL *" required>
+                    <input type="hidden" name="_next"
+                        value="https://officialabhishekgautam.github.io/Portfolio-Website/thanks.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_subject" value="Msg from portfolio!">
+                    <input class="input form bg3" type="text" name="message" placeholder="YOUR MESSAGE">
+                    <button class="subhead send bg3" type="submit">
+                        <div class="button1">SEND</div>
+                    </button>
+                </form>
+            </div>
+            <div class="subhead">
+                <p><strong>FOLLOW</strong> ME</p>
+            </div>
+
+            <div class="flex-row ">
+                <!-- <div  onclick="window.open('https://www.facebook.com/officialabhishekgautam','_blank')"  class="px"><img src="./social/fb.svg"></div> -->
+                <div onclick="window.open('https://www.linkedin.com/in/megha-jibhakate/','_blank')" class="px"><img
+                        src="./social/linkedin.svg"></div>
+                <!-- <div  onclick="window.open('https://www.instagram.com/official_abhishek_g/','_blank')"  class="px"><img src="./social/insta.svg"></div> -->
+                <!-- <div  onclick="window.open('https://www.behance.net/udibabaabhishek','_blank')"  class="px"><img src="./social/behance.svg"></div> -->
+                <div onclick="window.open('https://github.com/meghajibhakate','_blank')" class="px"><img
+                        src="./social/github.svg"></div>
+            </div>
+            <div class="subhead bottom">
+                <p>© 2023 by Megha Jibhakate.</p>
+                <!-- <p style="padding-top: 4px;"><a id="license" href="./license.txt">All rights reserved</a></p> -->
+                <p style="padding-top: 4px;">Proudly created with <strong>HTML CSS JS</strong></p>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js" async defer></script>
+</body>
+
 </html>
