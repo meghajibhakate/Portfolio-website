@@ -353,15 +353,15 @@ input:focus{
 }
 
 .tcss{
-    background-image: url('cards/tcss.png');
+    background-image: url(https://aircampus.in/assets/img/logo.png);
     background-size: contain;
-    width: 24px;
-    height: 24px;
+    width: 75px;
+    height: 50px;
     margin: 18px 4px 0px 4px;
-    border-radius: 100%;
+ 
 }
 
-.alpine{
+/* .alpine{
     background-image: url('cards/alpine.png');
     background-size: contain;
     width: 24px;
@@ -386,7 +386,7 @@ input:focus{
     height: 24px;
     margin: 18px 4px 0px 4px;
     border-radius: 100%;
-}
+} */
 
 .skillbox{
     background-size: contain;
